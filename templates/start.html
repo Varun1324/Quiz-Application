@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='start.css')}}">
+</head>
+<body>
+    <center>
+        <br>
+    <div class="container1">
+        <br><br>
+        <h1>Code Crunch</h1>
+        <div class="inner">
+        <form action="/" method="post" id="startQuiz">
+            <div class="input-div">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="input-div">
+                <input type="text" name="rollno" placeholder="Roll-No" required>
+            </div>
+            <div class="input-div">
+                <input type="submit" onclick="submitButton()" id="button">
+            </div>
+        </form>
+        </div>
+    </div>
+    </center>
+    <script src="{{url_for('static',filename='start_script.js')}}"></script>
+</body>
+</html>
